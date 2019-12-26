@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>企业用户界面</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #control-button {
+            background-color: white;
+            margin-left: 50%;
+            margin-top: 15%;
+            transform: translate(-50%,-50%);
+            text-align:center;
+            padding:5px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius: 15px;
+            background-color: rgba(151,222,255,0.35);
+            color:#0070cb;
+            height:60px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/user">工业App分级系统</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/user">主页</a></li>
+                <li><a href="/user/feedback">反馈</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://secure.gravatar.com/avatar/779aa039c795dfa8736f0bf48b2cf7be?s=18&amp;d=identicon&amp;r=g" style="border-radius: 3px">
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/index">个人中心</a></li>
+                        <li><a href="/index">修改密码</a></li>
+                        <li><a href="/index">修改邮箱</a></li>
+                        <li><a href="/index">退出</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<form action="/user/addApp" method="post">
+    <input id="control-button" type="submit" value="点击新建审核请求">
+</form>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

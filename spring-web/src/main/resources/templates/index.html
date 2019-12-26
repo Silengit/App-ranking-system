@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>工业App分级系统登录界面</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #dialog {
+        background-color: white;
+        margin-left: 50%;
+        margin-top: 25%;
+        transform: translate(-50%,-50%);
+        color:black;
+        height:350px;
+        width:400px;
+        text-align:center;
+        padding:5px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        border-radius: 15px;
+      }
+      .inbox {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body background="/img/industry.jpg">
+
+    <div id="dialog">
+      <h2>工业App分级系统</h2>
+      <h3>登录</h3>
+      <div>
+        <form action="/login" object="${user}" method="post">
+          <div class="inbox">
+            <input class="form-control" type="email" name="name" required="required" maxlength="30" placeholder="输入邮箱">
+          </div>
+          <div class="inbox">
+            <input class="form-control" type="password" name="password" required="required" maxlength="20" placeholder="输入密码">
+          </div>
+          <div class="inbox">
+            <input style="background-color: rgba(151,222,255,0.35);color: #0070cb" class="form-control" type="submit" value="登录">
+          </div>
+        </form>
+      </div>
+      <hr/>
+      <div class="inbox">
+        <form action="/register" method="post">
+          <input class="form-control" type="submit" value="注册试用">
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

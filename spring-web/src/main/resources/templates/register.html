@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>工业App分级系统注册界面</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #dialog {
+        background-color: white;
+        margin-left: 50%;
+        margin-top: 25%;
+        transform: translate(-50%,-50%);
+        color:black;
+        height:420px;
+        width:400px;
+        text-align:center;
+        padding:5px;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        border-radius: 15px;
+      }
+      .inbox {
+        margin: 10px;
+      }
+      .label-control{
+        float: left;
+      }
+    </style>
+  </head>
+  <body background="/img/industry.jpg">
+
+
+    <div id="dialog">
+      <h2>工业App分级系统</h2>
+      <h3>欢迎注册</h3>
+      <div>
+        <form action="/register/submit" method="post">
+          <div class="inbox">
+             <label class="label-control">注册邮箱</label>
+            <input class="form-control" type="email" name="name" required="required" maxlength="30">
+          </div>
+          <div class="inbox">
+            <label class="label-control">输入新密码</label>
+            <input class="form-control" type="password" name="password" required="required" maxlength="20">
+          </div>
+          <div class="inbox">
+            <label class="label-control">确认密码</label>
+            <input class="form-control" type="password" name="confirm_psd" required="required" maxlength="20">
+          </div>
+          <div class="inbox">
+            <input class="form-control" style="background-color: rgba(151,222,255,0.35);color: #0070cb" type="submit" value="提交">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

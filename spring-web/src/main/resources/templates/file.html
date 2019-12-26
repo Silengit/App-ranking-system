@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>提交材料页面</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #header {
+            background-color:white;
+            color:gray;
+            text-align:center;
+            padding:5px;
+        }
+        #nav {
+            background-color: white;
+            float:left;
+            color:black;
+            height:520px;
+            width:200px;
+            text-align:left;
+            padding:5px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        }
+        #section {
+            float:left;
+            padding:10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/user">工业App分级系统</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/user">主页</a></li>
+                <li><a href="/feedback">反馈</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://secure.gravatar.com/avatar/779aa039c795dfa8736f0bf48b2cf7be?s=18&amp;d=identicon&amp;r=g" style="border-radius: 3px">
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/index">个人中心</a></li>
+                        <li><a href="/index">修改密码</a></li>
+                        <li><a href="/index">修改邮箱</a></li>
+                        <li><a href="/index">退出</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <h1>示例App1</h1>
+</div>
+
+<div id="nav">
+    <form action="/user/file/uploaded" method="post">
+        <label class="text">应用范围</label>
+        <hr/>
+        <label class="text">所解决工业问题的影响范围</label>
+        <hr/>
+        <label class="text">先进性程度</label>
+        <hr/>
+        <label class="text">工业知识的创新性</label>
+        <hr/>
+        <label class="text">应用验证情况</label>
+        <hr/>
+        <label class="text">...</label>
+        <hr/>
+        <input class="form-control" style="background-color: rgba(151,222,255,0.35);color: #0070cb" type="submit" value="确认上传完毕">
+    </form>
+</div>
+
+<div id="section">
+    <ul style="list-style:none;margin:0px; ">
+        <li style="float:left;"><a><img src="/img/review.png" /></a></li>
+        <li style="float:left;"><a><img src="/img/review.png" /></a></li>
+        <li style="float:left;"><a><img src="/img/upload.png" /></a></li>
+    </ul>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
