@@ -1,2 +1,2 @@
-# App-ranking-system
+# App ranking system
 Application on Spring-Web.
